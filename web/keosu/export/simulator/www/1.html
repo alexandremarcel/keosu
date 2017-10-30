@@ -11,7 +11,17 @@
 </div>
 <div style="overflow-x: hidden"></div>
 <div class="slide-menu" ng-class="{'open' : menuOpen}">
-	<div id="menu" class="zone"> </div>
+	<div id="menu" class="zone" ng-controller="keosu-menuController" ng-init='init({"host":"http:\/\/localhost\/keosu\/web\/app_dev.php\/","gadgetId":7,"pageId":1,"gadgetParam":{"menu-id":1},"appParam":[]})'><div ng-controller="keosu-menuController" class=" row-fluid menu">
+
+	<div ng-controller="keosu-menuController" class=" row-fluid menu">
+		<div ng-repeat="page in pages" class="menu-elements item-menu-list">
+			<a href="#/Page/{{::page.id}}">
+				<img ng-if="page.icon" ng-src="{{ getPath(page.icon, page.iconActive,page.id) }}"  ng-class="getClass(page.id)" />
+				<span class="titre-menu-list" ng-bind="page.name"></span>
+			</a>
+		</div>
+	</div>
+</div></div>
 </div>
 <div class="">
 	<div class="container-fluid">

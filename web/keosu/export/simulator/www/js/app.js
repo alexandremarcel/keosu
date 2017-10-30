@@ -1,4 +1,4 @@
-var importedPackages = ["keosu-base","angularJs","jQuery","keosu-push","keosu-around-me","keosu-comments","lib-js"];
+var importedPackages = ["keosu-base","angularJs","jQuery","keosu-push","keosu-article","keosu-comments","keosu-share","keosu-map","lib-js","keosu-menu","keosu-around-me"];
 var app = angular.module('keosuApp', ['angularSpinner','angular-carousel','ngSanitize', 'ngTouch', 'ngRoute','angular-inview','LocalStorageModule','CacheManagerModule','ui.bootstrap']);
 
 app.config(function( $compileProvider ) {
@@ -213,6 +213,176 @@ app.config(function($routeProvider,$locationProvider){
 			};
 		}]
 	};
+});
+//https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/blob/master/README.md
+
+app.directive('keosuShare', function(){
+	return {
+		restrict : 'E',
+		scope : {
+			object: '=object',
+			url: '=url'
+		},
+		templateUrl : 'plugins/keosu-share/templates/default.html',
+		controller : ['$scope','$http', function ($scope, $http) {
+
+			$scope.share = function () {
+				//window.plugins.socialsharing.share('Message, subject, image and link',
+				// 'The subject',
+				// 'https://www.google.nl/images/srpr/logo4w.png',
+				// 'http://www.x-services.nl');
+				window.plugins.socialsharing.share($scope.object.title, null, null, $scope.url);
+			};
+			$scope.$watch('objectId', function() {
+        	});
+		}]
+	};
+});
+/************************************************************************
+ Keosu is an open source CMS for mobile app
+ Copyright (C) 2014  Vincent Le Borgne
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ ************************************************************************/
+app.controller('keosu-articleController', function ($scope, $http, $sce, usSpinnerService, cacheManagerService) {
+
+    $http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+
+
+    /////////////////////////
+    // Init part
+    /////////////////////////
+    $scope.init = function (params) {
+        $scope.param = params;
+        $scope.articleInit();
+    };
+
+    /////////////////////////
+    // Article part
+    /////////////////////////
+    $scope.articleInit = function () {
+        if ($scope.param.gadgetParam.offline == true) {
+            $http.get('data/article' + $scope.param.gadgetParam['article-id'] + '.json').success(function (data) {
+                $scope.article = data;
+                $scope.article.content = $sce.trustAsHtml(data.content);
+            });
+        } else {
+            usSpinnerService.spin('spinner'); // While loading, there will be a spinner
+            cacheManagerService.get($scope.param.host + 'service/gadget/article/' + $scope.param.gadgetId + '/json', $scope.param.gadgetParam.cache, $scope.param.gadgetParam.timeout).success(function (data) {
+                usSpinnerService.stop('spinner');
+                $scope.article = data;
+                $scope.article.content = $sce.trustAsHtml(data.content);
+            }).error(function (error) {
+                $scope.error = (error);
+                usSpinnerService.stop('spinner');
+            });
+        }
+    };
+
+});
+/************************************************************************
+ Keosu is an open source CMS for mobile app
+ Copyright (C) 2013  Vincent Le Borgne
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ ************************************************************************/
+
+//Main function
+
+app.controller('keosu-mapController', function ($scope, $http, $sce, usSpinnerService, cacheManagerService) {
+
+	////////////////////////////
+	// init part
+	////////////////////////////
+	$scope.init = function (params) {
+		$scope.param = params;
+		$scope.showMapAction();
+	};
+
+	/////////////////////////////
+	// Map part
+	/////////////////////////////
+	$scope.showMapAction = function () {
+		usSpinnerService.spin('spinner'); // While loading, there will be a spinner
+
+		cacheManagerService.get($scope.param.host + 'service/gadget/mapgadget/' + $scope.param.gadgetId + '/json', $scope.param.gadgetParam.cache, $scope.param.gadgetParam.timeout).success(function (data) {
+			usSpinnerService.stop('spinner');
+			$scope.map = data[0];
+			
+			$scope.title = $('<div/>').html(data[0].name).text();
+			$scope.content = $sce.trustAsHtml(data[0].description);
+
+			//init map
+			var map = new MapElement({name : "map_canvas"});
+			map.addMarker("marker", [data[0].lat, data[0].lng]);
+			map.setCenter([data[0].lat, data[0].lng]);
+			map.setZoom($scope.param.gadgetParam.zoom);
+			google.maps.event.trigger($("#map_canvas")[0], 'resize');
+
+		}).error(function (error) {
+			$scope.error = (error);
+			usSpinnerService.stop('spinner');
+		});
+	};
+});
+/************************************************************************
+	Keosu is an open source CMS for mobile app
+	Copyright (C) 2013  Vincent Le Borgne
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ ************************************************************************/
+app.controller('keosu-menuController', function ($rootScope, $scope, $http,$location) {
+	$scope.init = function(params) {
+		$rootScope.initButton();
+		$scope.pages = params.gadgetParam.pages;
+		$http.get('data/'+params.gadgetId+".json").success(function(data) {
+			console.log(data);
+			$scope.pages = data;
+		});
+	};
+
+    $scope.getPath = function(icon,iconActive, page) {
+
+        return $location.path() == '/Page/'+page ? 'data/menu/'+iconActive : 'data/menu/'+icon;
+    }
+
+	// @see https://stackoverflow.com/questions/12592472/how-to-highlight-a-current-menu-item-in-angularjs
+	$scope.getClass = function(page) {
+		return $location.path() == '/Page/'+page ? 'active' : ''
+	}
 });
 /************************************************************************
  Keosu is an open source CMS for mobile app
