@@ -1,0 +1,18 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: 3306
+    database_name: tacosinlyon
+    database_user: root
+    database_password: 
+    database_path: ~
+    url_base: http://localhost/keosu/web
+    url_param: /app_dev.php/
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: ~
+    mailer_password: ~
+    admin_password: admin
+    locale: en
+    secret: m0Zjhl1DRiFTduYOvNQo
+    installer: false

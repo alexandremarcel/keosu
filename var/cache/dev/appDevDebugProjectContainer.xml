@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app</parameter>
+    <parameter key="kernel.root_dir">E:\wamp64\www\keosu\app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/logs</parameter>
+    <parameter key="kernel.cache_dir">E:\wamp64\www\keosu\var\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">E:\wamp64\www\keosu\var\logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -57,25 +57,26 @@
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
+    <parameter key="database_driver">pdo_mysql</parameter>
+    <parameter key="database_host">127.0.0.1</parameter>
+    <parameter key="database_port">3306</parameter>
+    <parameter key="database_name">tacosinlyon</parameter>
+    <parameter key="database_user">root</parameter>
+    <parameter key="database_password">null</parameter>
+    <parameter key="database_path">null</parameter>
+    <parameter key="url_base">http://localhost/keosu/web</parameter>
+    <parameter key="url_param">/app_dev.php/</parameter>
     <parameter key="mailer_transport">smtp</parameter>
     <parameter key="mailer_host">localhost</parameter>
     <parameter key="mailer_user">null</parameter>
     <parameter key="mailer_password">null</parameter>
-    <parameter key="admin_password">lagoutte</parameter>
+    <parameter key="admin_password">admin</parameter>
     <parameter key="locale">en</parameter>
-    <parameter key="secret">ThisTokenIsNotSoSecretChangeIt</parameter>
-    <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">localhost</parameter>
-    <parameter key="database_port">3306</parameter>
-    <parameter key="database_name">unicorn161</parameter>
-    <parameter key="database_user">root</parameter>
-    <parameter key="database_password">root</parameter>
-    <parameter key="database_path">null</parameter>
-    <parameter key="url_base">http://localhost/keosu/web</parameter>
-    <parameter key="url_param">/app_dev.php/</parameter>
+    <parameter key="secret">m0Zjhl1DRiFTduYOvNQo</parameter>
+    <parameter key="installer">false</parameter>
     <parameter key="fragment.renderer.hinclude.global_template">null</parameter>
     <parameter key="fragment.path">/_fragment</parameter>
-    <parameter key="kernel.secret">ThisTokenIsNotSoSecretChangeIt</parameter>
+    <parameter key="kernel.secret">m0Zjhl1DRiFTduYOvNQo</parameter>
     <parameter key="kernel.http_method_override">true</parameter>
     <parameter key="kernel.trusted_hosts" type="collection"/>
     <parameter key="kernel.trusted_proxies" type="collection"/>
@@ -86,7 +87,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/sessions</parameter>
+    <parameter key="session.save_path">E:\wamp64\www\keosu\app/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
@@ -100,7 +101,7 @@
     <parameter key="translator.logging">true</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:E:\wamp64\www\keosu\var\cache\dev/profiler</parameter>
     <parameter key="router.options.generator_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</parameter>
@@ -112,12 +113,12 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/config/routing_dev.yml</parameter>
+    <parameter key="router.resource">E:\wamp64\www\keosu\app/config/routing_dev.yml</parameter>
     <parameter key="router.cache_class_prefix">appDev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">E:\wamp64\www\keosu\var\cache\dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="security.authentication.trust_resolver.anonymous_class">Symfony\Component\Security\Core\Authentication\Token\AnonymousToken</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">Symfony\Component\Security\Core\Authentication\Token\RememberMeToken</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection">
@@ -208,7 +209,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">E:\wamp64\www\keosu\var\cache\dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -233,7 +234,7 @@
     <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
     <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
     <parameter key="assetic.node.paths" type="collection"/>
-    <parameter key="assetic.cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/assetic</parameter>
+    <parameter key="assetic.cache_dir">E:\wamp64\www\keosu\var\cache\dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection"/>
     <parameter key="assetic.twig_extension.class">Symfony\Bundle\AsseticBundle\Twig\AsseticExtension</parameter>
     <parameter key="assetic.twig_formula_loader.class">Assetic\Extension\Twig\TwigFormulaLoader</parameter>
@@ -243,13 +244,13 @@
     <parameter key="assetic.debug">true</parameter>
     <parameter key="assetic.use_controller">false</parameter>
     <parameter key="assetic.enable_profiler">false</parameter>
-    <parameter key="assetic.read_from">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/../web</parameter>
-    <parameter key="assetic.write_to">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/../web</parameter>
+    <parameter key="assetic.read_from">E:\wamp64\www\keosu\app/../web</parameter>
+    <parameter key="assetic.write_to">E:\wamp64\www\keosu\app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
-    <parameter key="assetic.java.bin">/usr/bin/java</parameter>
-    <parameter key="assetic.node.bin">/usr/local/bin/node</parameter>
+    <parameter key="assetic.java.bin">C:\ProgramData\Oracle\Java\javapath\java.EXE</parameter>
+    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
-    <parameter key="assetic.sass.bin">/usr/local/bin/sass</parameter>
+    <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.reactjsx.bin">/usr/bin/jsx</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
     <parameter key="assetic.filter.lessphp.class">Assetic\Filter\LessphpFilter</parameter>
@@ -365,7 +366,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">E:\wamp64\www\keosu\var\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -377,7 +378,7 @@
     <parameter key="sensio_framework_extra.converter.doctrine.class">Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter</parameter>
     <parameter key="sensio_framework_extra.converter.datetime.class">Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DateTimeParamConverter</parameter>
     <parameter key="sensio_framework_extra.view.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener</parameter>
-    <parameter key="jms_aop.cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_aop</parameter>
+    <parameter key="jms_aop.cache_dir">E:\wamp64\www\keosu\var\cache\dev/jms_aop</parameter>
     <parameter key="jms_aop.interceptor_loader.class">JMS\AopBundle\Aop\InterceptorLoader</parameter>
     <parameter key="jms_di_extra.metadata.driver.annotation_driver.class">JMS\DiExtraBundle\Metadata\Driver\AnnotationDriver</parameter>
     <parameter key="jms_di_extra.metadata.driver.configured_controller_injections.class">JMS\DiExtraBundle\Metadata\Driver\ConfiguredControllerInjectionsDriver</parameter>
@@ -391,15 +392,15 @@
     <parameter key="jms_di_extra.all_bundles">false</parameter>
     <parameter key="jms_di_extra.bundles" type="collection"/>
     <parameter key="jms_di_extra.directories" type="collection"/>
-    <parameter key="jms_di_extra.cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_diextra</parameter>
+    <parameter key="jms_di_extra.cache_dir">E:\wamp64\www\keosu\var\cache\dev/jms_diextra</parameter>
     <parameter key="jms_di_extra.disable_grep">false</parameter>
     <parameter key="jms_di_extra.doctrine_integration">true</parameter>
     <parameter key="jms_di_extra.annotation_patterns" type="collection">
       <parameter>JMS\DiExtraBundle\Annotation</parameter>
     </parameter>
     <parameter key="jms_di_extra.cache_warmer.controller_file_blacklist" type="collection"/>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_diextra/doctrine/EntityManager_57ebbbee97034.php</parameter>
-    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager57ebbbee97034_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.file">E:\wamp64\www\keosu\var\cache\dev/jms_diextra/doctrine/EntityManager_59f6eb8090ef1.php</parameter>
+    <parameter key="jms_di_extra.doctrine_integration.entity_manager.class">EntityManager59f6eb8090ef1_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager</parameter>
     <parameter key="security.secured_services" type="collection"/>
     <parameter key="security.access.method_interceptor.class">JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor</parameter>
     <parameter key="security.access.method_access_control" type="collection"/>
@@ -417,7 +418,7 @@
     <parameter key="security.extra.annotation_driver.class">JMS\SecurityExtraBundle\Metadata\Driver\AnnotationDriver</parameter>
     <parameter key="security.extra.file_cache.class">Metadata\Cache\FileCache</parameter>
     <parameter key="security.access.secure_all_services">false</parameter>
-    <parameter key="security.extra.cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_security</parameter>
+    <parameter key="security.extra.cache_dir">E:\wamp64\www\keosu\var\cache\dev/jms_security</parameter>
     <parameter key="security.acl.permission_evaluator.class">JMS\SecurityExtraBundle\Security\Acl\Expression\PermissionEvaluator</parameter>
     <parameter key="security.acl.has_permission_compiler.class">JMS\SecurityExtraBundle\Security\Acl\Expression\HasPermissionFunctionCompiler</parameter>
     <parameter key="security.acl.has_class_permission_compiler.class">JMS\SecurityExtraBundle\Security\Acl\Expression\HasClassPermissionFunctionCompiler</parameter>
@@ -602,7 +603,7 @@
     <parameter key="rms_push_notifications.ios.enabled">false</parameter>
     <parameter key="rms_push_notifications.mac.enabled">false</parameter>
     <parameter key="fkr_simple_pie.cache_enabled">true</parameter>
-    <parameter key="fkr_simple_pie.cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/rss</parameter>
+    <parameter key="fkr_simple_pie.cache_dir">E:\wamp64\www\keosu\var\cache\dev/rss</parameter>
     <parameter key="fkr_simple_pie.cache_duration">3600</parameter>
     <parameter key="fkr_simple_pie.factory">Fkr\SimplePieBundle\DependencyInjection\Factory\SimplePieFactory</parameter>
     <parameter key="web_profiler.debug_toolbar.position">bottom</parameter>
@@ -716,7 +717,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/Resources</argument>
+                <argument>E:\wamp64\www\keosu\app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -749,7 +750,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/Resources</argument>
+                <argument>E:\wamp64\www\keosu\app/Resources</argument>
               </service>
             </argument>
             <argument type="collection"/>
@@ -762,7 +763,7 @@
             <argument type="service">
               <service class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
                 <argument type="service" id="kernel"/>
-                <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app</argument>
+                <argument>E:\wamp64\www\keosu\app</argument>
                 <argument type="collection"/>
               </service>
             </argument>
@@ -797,10 +798,10 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/Resources</argument>
+      <argument>E:\wamp64\www\keosu\app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
-      <argument>ThisTokenIsNotSoSecretChangeIt</argument>
+      <argument>m0Zjhl1DRiFTduYOvNQo</argument>
     </service>
     <service id="config_cache_factory" class="Symfony\Component\Config\ResourceCheckerConfigCacheFactory">
       <argument type="collection">
@@ -914,345 +915,345 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/translations</argument>
+        <argument key="cache_dir">E:\wamp64\www\keosu\var\cache\dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.af.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.af.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.af.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.af.yml</argument>
           </argument>
           <argument key="ar" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ar.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ar.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ar.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ar.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.ar.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ar.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ar.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ar.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ar.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ar.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.ar.yml</argument>
           </argument>
           <argument key="az" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.az.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.az.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.az.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.az.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.az.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.az.xlf</argument>
           </argument>
           <argument key="bg" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.bg.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.bg.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.bg.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bg.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bg.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.bg.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.bg.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.bg.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.bg.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.bg.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.bg.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.bg.yml</argument>
           </argument>
           <argument key="ca" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ca.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ca.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ca.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ca.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ca.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ca.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ca.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ca.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ca.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ca.yml</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cs.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.cs.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.cs.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.cs.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.cs.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cs.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.cs.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.cs.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.cs.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.cs.yml</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cy.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.cy.xlf</argument>
           </argument>
           <argument key="da" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.da.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.da.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.da.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.da.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.da.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.da.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.da.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.da.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.da.yml</argument>
           </argument>
           <argument key="de" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.de.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.de.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.de.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.de.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.de.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.de.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.de.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.de.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.de.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.de.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.de.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.de.yml</argument>
           </argument>
           <argument key="el" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.el.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.el.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.el.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.el.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.el.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.el.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.el.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.el.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.el.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.el.yml</argument>
           </argument>
           <argument key="en" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.en.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.en.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.en.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.en.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.en.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.en.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.en.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.en.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.en.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.en.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.en.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.en.yml</argument>
           </argument>
           <argument key="es" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.es.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.es.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.es.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.es.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.es.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.es.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.es.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.es.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.es.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.es.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.es.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.es.yml</argument>
           </argument>
           <argument key="et" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.et.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.et.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.et.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.et.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.et.yml</argument>
           </argument>
           <argument key="eu" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.eu.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.eu.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eu.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eu.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.eu.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.eu.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.eu.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.eu.yml</argument>
           </argument>
           <argument key="fa" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fa.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fa.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fa.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fa.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fa.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fa.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fa.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fa.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fa.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fa.yml</argument>
           </argument>
           <argument key="fi" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fi.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fi.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fi.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fi.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fi.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fi.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fi.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fi.yml</argument>
           </argument>
           <argument key="fr" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.fr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Resources/translations/messages.fr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.fr.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.fr.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.fr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.fr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.fr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.fr.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.fr.yml</argument>
+            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle/Resources/translations\messages.fr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.fr.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.fr.yml</argument>
           </argument>
           <argument key="gl" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.gl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.gl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.gl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.gl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.gl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.gl.xlf</argument>
           </argument>
           <argument key="he" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.he.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.he.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.he.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.he.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.he.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.he.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.he.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.he.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.he.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.he.yml</argument>
           </argument>
           <argument key="hr" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.hr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hr.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hr.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hr.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hr.yml</argument>
           </argument>
           <argument key="hu" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hu.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hu.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.hu.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hu.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hu.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hu.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hu.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.hu.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.hu.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.hu.yml</argument>
           </argument>
           <argument key="hy" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hy.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hy.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.hy.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.hy.xlf</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.id.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.id.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.id.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.id.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.id.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.id.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.id.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.id.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.id.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.id.yml</argument>
           </argument>
           <argument key="it" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.it.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.it.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.it.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.it.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.it.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.it.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.it.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.it.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.it.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.it.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.it.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.it.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.it.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.it.yml</argument>
           </argument>
           <argument key="ja" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ja.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ja.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ja.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ja.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ja.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.ja.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ja.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ja.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ja.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ja.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ja.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.ja.yml</argument>
           </argument>
           <argument key="lb" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lb.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lb.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.lb.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lb.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lb.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lb.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lb.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lb.yml</argument>
           </argument>
           <argument key="lt" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lt.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.lt.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lt.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lt.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.lt.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.lt.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lt.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.lt.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lt.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lt.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.lt.yml</argument>
           </argument>
           <argument key="mn" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.mn.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.mn.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.mn.xlf</argument>
           </argument>
           <argument key="nl" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.nl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nl.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nl.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.nl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.nl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.nl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.nl.yml</argument>
           </argument>
           <argument key="nn" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nn.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.nn.xlf</argument>
           </argument>
           <argument key="no" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.no.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.no.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.no.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.no.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.pl.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.pl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.pl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.pl.yml</argument>
           </argument>
           <argument key="pt" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.pt.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.pt.yml</argument>
           </argument>
           <argument key="pt_BR" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_BR.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt_BR.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt_BR.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.pt_BR.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_BR.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.pt_BR.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.pt_BR.yml</argument>
           </argument>
           <argument key="ro" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ro.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ro.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ro.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ro.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ro.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ro.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ro.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ro.yml</argument>
           </argument>
           <argument key="ru" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ru.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ru.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ru.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.ru.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/translations/messages.ru.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.ru.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.ru.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ru.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ru.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ru.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.ru.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/translations\messages.ru.yml</argument>
           </argument>
           <argument key="sk" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sk.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sk.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sk.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sk.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sk.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.sk.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sk.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sk.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sk.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sk.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sk.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.sk.yml</argument>
           </argument>
           <argument key="sl" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sl.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sl.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.sl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sl.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.sl.yml</argument>
           </argument>
           <argument key="sq" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sq.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sq.xlf</argument>
           </argument>
           <argument key="sr_Cyrl" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Cyrl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Cyrl.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Cyrl.xlf</argument>
           </argument>
           <argument key="sr_Latn" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sr_Latn.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sr_Latn.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sr_Latn.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sr_Latn.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sr_Latn.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sr_Latn.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sr_Latn.yml</argument>
           </argument>
           <argument key="sv" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sv.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sv.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.sv.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sv.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sv.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.sv.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.sv.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.sv.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.sv.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.sv.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.sv.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.sv.yml</argument>
           </argument>
           <argument key="th" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.th.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.th.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.th.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.th.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.th.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.th.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.th.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.th.yml</argument>
           </argument>
           <argument key="tr" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.tr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.tr.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.tr.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.tr.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.tr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.tr.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.tr.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.tr.yml</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.uk.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.uk.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.uk.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.uk.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/translations/pagination.uk.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.uk.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.uk.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.uk.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.uk.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/translations\pagination.uk.yml</argument>
           </argument>
           <argument key="vi" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.vi.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.vi.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.vi.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.vi.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.vi.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.vi.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.vi.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.vi.yml</argument>
           </argument>
           <argument key="zh_CN" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.zh_CN.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.zh_CN.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.zh_CN.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.zh_CN.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.zh_CN.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.zh_CN.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.zh_CN.yml</argument>
           </argument>
           <argument key="zh_TW" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_TW.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Validator/Resources/translations\validators.zh_TW.xlf</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lv.xlf</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lv.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lv.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/translations\validators.lv.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.lv.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.lv.yml</argument>
           </argument>
           <argument key="pt_PT" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.pt_PT.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.pt_PT.xlf</argument>
           </argument>
           <argument key="ua" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/../Resources/translations/security.ua.xlf</argument>
+            <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Security\Core\Exception/../Resources/translations\security.ua.xlf</argument>
           </argument>
           <argument key="ky" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ky.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ky.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.ky.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.ky.yml</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nb.yml</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nb.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\FOSUserBundle.nb.yml</argument>
+            <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/translations\validators.nb.yml</argument>
           </argument>
         </argument>
       </argument>
@@ -1747,7 +1748,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev</argument>
+      <argument>E:\wamp64\www\keosu\var\cache\dev</argument>
     </service>
     <service id="validator" class="Symfony\Component\Validator\Validator\ValidatorInterface">
       <factory service="validator.builder" method="getValidator"/>
@@ -1777,8 +1778,8 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
-          <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml</argument>
+          <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Component\Form/Resources/config/validation.xml</argument>
+          <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle\Resources\config\validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1799,7 +1800,7 @@
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/../../Resources/config/storage-validation/orm.xml</argument>
+        <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle\DependencyInjection\Compiler/../../Resources/config/storage-validation/orm.xml</argument>
       </call>
       <factory class="Symfony\Component\Validator\Validation" method="createValidatorBuilder"/>
     </service>
@@ -1814,7 +1815,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/profiler</argument>
+          <argument>file:E:\wamp64\www\keosu\var\cache\dev/profiler</argument>
         </service>
       </argument>
       <argument type="service" id="monolog.logger.profiler" on-invalid="null"/>
@@ -2296,7 +2297,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>57ebbbee850247.82160293</argument>
+            <argument>59f6eb7fe2f710.87803340</argument>
           </service>
         </argument>
       </argument>
@@ -2335,7 +2336,7 @@
                     <argument>security.expressions.compiler</argument>
                   </call>
                   <call method="setCacheDir">
-                    <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_security/expressions</argument>
+                    <argument>E:\wamp64\www\keosu\var\cache\dev/jms_security/expressions</argument>
                   </call>
                 </service>
               </argument>
@@ -2445,7 +2446,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Core\User\User" public="false">
             <argument>admin</argument>
-            <argument>lagoutte</argument>
+            <argument>admin</argument>
             <argument type="collection">
               <argument>ROLE_SUPER_ADMIN</argument>
             </argument>
@@ -2710,7 +2711,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>57ebbbee850247.82160293</argument>
+            <argument>59f6eb7fe2f710.87803340</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2890,7 +2891,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">filename</argument>
-        <argument key="cache">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/twig</argument>
+        <argument key="cache">E:\wamp64\www\keosu\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2950,7 +2951,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app</argument>
+            <argument>E:\wamp64\www\keosu\app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -3142,7 +3143,7 @@
       <argument>twig.controller.exception:showAction</argument>
     </service>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/logs/dev.log</argument>
+      <argument>E:\wamp64\www\keosu\var\logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -3188,7 +3189,7 @@
             </argument>
             <argument type="service">
               <service class="Assetic\Cache\ConfigCache" public="false">
-                <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/assetic/config</argument>
+                <argument>E:\wamp64\www\keosu\var\cache\dev/assetic/config</argument>
               </service>
             </argument>
             <argument>true</argument>
@@ -3202,7 +3203,7 @@
             <tag name="assetic.formula_resource" loader="twig"/>
             <argument type="service" id="templating.loader"/>
             <argument></argument>
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/Resources/views</argument>
+            <argument>E:\wamp64\www\keosu\app/Resources/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -3217,7 +3218,7 @@
           <factory service="service_container" method="getParameterBag"/>
         </service>
       </argument>
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/../web</argument>
+      <argument>E:\wamp64\www\keosu\app/../web</argument>
       <argument>true</argument>
       <call method="addWorker">
         <argument type="service">
@@ -3265,11 +3266,11 @@
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">localhost</argument>
+        <argument key="host">127.0.0.1</argument>
         <argument key="port">3306</argument>
-        <argument key="dbname">unicorn161</argument>
+        <argument key="dbname">tacosinlyon</argument>
         <argument key="user">root</argument>
-        <argument key="password">root</argument>
+        <argument key="password">null</argument>
         <argument key="charset">UTF8</argument>
         <argument key="path">null</argument>
         <argument key="driverOptions" type="collection"/>
@@ -3337,17 +3338,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_682a025deb90b32f6ce152e02a57c96bd287a5213114312dbe50292902fd3dc3</argument>
+        <argument>sf2orm_default_7cb74126b228798426c0f00171df7c15f844b1e9f296a8106d6842605aa88a70</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_682a025deb90b32f6ce152e02a57c96bd287a5213114312dbe50292902fd3dc3</argument>
+        <argument>sf2orm_default_7cb74126b228798426c0f00171df7c15f844b1e9f296a8106d6842605aa88a70</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_682a025deb90b32f6ce152e02a57c96bd287a5213114312dbe50292902fd3dc3</argument>
+        <argument>sf2orm_default_7cb74126b228798426c0f00171df7c15f844b1e9f296a8106d6842605aa88a70</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -3358,8 +3359,8 @@
       <argument type="collection"/>
       <argument type="collection"/>
     </service>
-    <service id="doctrine.orm.default_entity_manager" class="EntityManager57ebbbee97034_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
-      <file>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_diextra/doctrine/EntityManager_57ebbbee97034.php</file>
+    <service id="doctrine.orm.default_entity_manager" class="EntityManager59f6eb8090ef1_546a8d27f194334ee012bfe64f629947b07e4919\__CG__\Doctrine\ORM\EntityManager">
+      <file>E:\wamp64\www\keosu\var\cache\dev/jms_diextra/doctrine/EntityManager_59f6eb8090ef1.php</file>
       <argument type="service">
         <service class="Doctrine\ORM\EntityManager" public="false">
           <argument type="service" id="doctrine.dbal.default_connection"/>
@@ -3397,17 +3398,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3418,17 +3419,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3439,17 +3440,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3460,17 +3461,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3481,17 +3482,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3502,17 +3503,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3523,17 +3524,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3544,17 +3545,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3565,17 +3566,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3586,17 +3587,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3607,17 +3608,17 @@
                         <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                           <argument type="service" id="annotation_reader"/>
                           <argument type="collection">
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PictureGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CommentGadgetBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Entity</argument>
-                            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PictureGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CommentGadgetBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle\Entity</argument>
+                            <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle\Entity</argument>
                           </argument>
                         </service>
                       </argument>
@@ -3629,7 +3630,7 @@
                           <argument type="service">
                             <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                               <argument type="collection">
-                                <argument key="/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping">FOS\UserBundle\Model</argument>
+                                <argument key="E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle\Resources\config\doctrine-mapping">FOS\UserBundle\Model</argument>
                               </argument>
                               <argument>.orm.xml</argument>
                             </service>
@@ -3642,7 +3643,7 @@
                 </argument>
               </call>
               <call method="setProxyDir">
-                <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/doctrine/orm/Proxies</argument>
+                <argument>E:\wamp64\www\keosu\var\cache\dev/doctrine/orm/Proxies</argument>
               </call>
               <call method="setProxyNamespace">
                 <argument>Proxies</argument>
@@ -3758,7 +3759,7 @@
       <call method="setCache">
         <argument type="service">
           <service class="Metadata\Cache\FileCache" public="false">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_diextra/metadata</argument>
+            <argument>E:\wamp64\www\keosu\var\cache\dev/jms_diextra/metadata</argument>
           </service>
         </argument>
       </call>
@@ -3808,7 +3809,7 @@
       <call method="setCache">
         <argument type="service">
           <service class="Metadata\Cache\FileCache" public="false">
-            <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/jms_security</argument>
+            <argument>E:\wamp64\www\keosu\var\cache\dev/jms_security</argument>
             <argument>true</argument>
           </service>
         </argument>
@@ -4234,7 +4235,7 @@
     </service>
     <service id="fkr_simple_pie.rss" class="SimplePie">
       <argument>true</argument>
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/rss</argument>
+      <argument>E:\wamp64\www\keosu\var\cache\dev/rss</argument>
       <argument>3600</argument>
       <factory class="Fkr\SimplePieBundle\DependencyInjection\Factory\SimplePieFactory" method="create"/>
     </service>
@@ -4484,12 +4485,12 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/sessions</argument>
+      <argument>E:\wamp64\www\keosu\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/sessions</argument>
+      <argument>E:\wamp64\www\keosu\app/sessions</argument>
     </service>
     <service id="templating.loader" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\FilesystemLoader">
       <argument type="service" id="templating.locator"/>
@@ -4511,9 +4512,9 @@
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/config/routing_dev.yml</argument>
+      <argument>E:\wamp64\www\keosu\app/config/routing_dev.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev</argument>
+        <argument key="cache_dir">E:\wamp64\www\keosu\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -4537,7 +4538,7 @@
       </argument>
       <argument type="service">
         <service class="Doctrine\Common\Cache\FilesystemCache" public="false">
-          <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/var/cache/dev/annotations</argument>
+          <argument>E:\wamp64\www\keosu\var\cache\dev/annotations</argument>
         </service>
       </argument>
       <argument>true</argument>
@@ -4577,122 +4578,122 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\symfony\swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\friendsofsymfony\user-bundle/Resources/views</argument>
         <argument>FOSUser</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/ArticleModelBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\ArticleModelBundle/Resources/views</argument>
         <argument>KeosuDataModelArticleModel</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/CoreBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\CoreBundle/Resources/views</argument>
         <argument>KeosuCore</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/ArticleGadgetBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\ArticleGadgetBundle/Resources/views</argument>
         <argument>KeosuGadgetArticleGadget</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\mopa\bootstrap-bundle\Mopa\Bundle\BootstrapBundle/Resources/views</argument>
         <argument>MopaBootstrap</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/UserBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\UserBundle/Resources/views</argument>
         <argument>KeosuUser</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/LocationModelBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\LocationModelBundle/Resources/views</argument>
         <argument>KeosuDataModelLocationModel</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/MapGadgetBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\MapGadgetBundle/Resources/views</argument>
         <argument>KeosuGadgetMapGadget</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Reader/RssReaderBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Reader\RssReaderBundle/Resources/views</argument>
         <argument>KeosuReaderRssReader</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/stfalcon/tinymce-bundle/Stfalcon/Bundle/TinymceBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\stfalcon\tinymce-bundle\Stfalcon\Bundle\TinymceBundle/Resources/views</argument>
         <argument>StfalconTinymce</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/AroundMeGadgetBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\AroundMeGadgetBundle/Resources/views</argument>
         <argument>KeosuGadgetAroundMeGadget</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/PictureModelBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\PictureModelBundle/Resources/views</argument>
         <argument>KeosuDataModelPictureModel</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PicturesGalleryGadgetBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PicturesGalleryGadgetBundle/Resources/views</argument>
         <argument>KeosuGadgetPicturesGalleryGadget</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/EventModelBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\EventModelBundle/Resources/views</argument>
         <argument>KeosuDataModelEventModel</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Reader/IcsReaderBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Reader\IcsReaderBundle/Resources/views</argument>
         <argument>KeosuReaderIcsReader</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Reader/RssEventReaderBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Reader\RssEventReaderBundle/Resources/views</argument>
         <argument>KeosuReaderRssEventReader</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/CalendarGadgetBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\CalendarGadgetBundle/Resources/views</argument>
         <argument>KeosuGadgetCalendarGadget</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/AuthenticationGadgetBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\AuthenticationGadgetBundle/Resources/views</argument>
         <argument>KeosuGadgetAuthenticationGadget</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/Gadget/PushNotificationBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\Gadget\PushNotificationBundle/Resources/views</argument>
         <argument>KeosuGadgetPushNotification</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/SearchModelBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\SearchModelBundle/Resources/views</argument>
         <argument>KeosuDataModelSearchModel</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/src/Keosu/DataModel/MenuModelBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\src\Keosu\DataModel\MenuModelBundle/Resources/views</argument>
         <argument>KeosuDataModelMenuModel</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/coresphere/console-bundle/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\vendor\coresphere\console-bundle/Resources/views</argument>
         <argument>CoreSphereConsole</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/app/Resources/views</argument>
+        <argument>E:\wamp64\www\keosu\app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/vincentleborgne/Sites/packages/RC-v0.1.6.1-unicorn/keosu/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
+        <argument>E:\wamp64\www\keosu\vendor\symfony\symfony\src\Symfony\Bridge\Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
