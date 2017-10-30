@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-fixed-top classic-navbar" role="banner"><div class="header">
+		<div class="header header-slide" ng-click="menuOpen =!menuOpen" ng-class="{'open' : menuOpen}">
+            <div class="icon-menu2"></div>
+        </div>
+		<div class="title"><b>{{::appName}}</b></div>
+    </div>
+</nav><div class="block-button">
+	<div class="" ng-click="back()" ng-show="closeButton">
+		<span class="glyphicon glyphicon-remove animated fadeIn btn" aria-hidden="true"></span>
+	</div>
+</div>
+<div style="overflow-x: hidden"></div>
+<div class="slide-menu" ng-class="{'open' : menuOpen}">
+	<div id="menu" class="zone"> </div>
+</div>
+<div class="">
+	<div class="container-fluid">
+		<div id="body" class="zone" ng-controller="keosu-around-meController" ng-init='init({"host":"http:\/\/localhost\/keosu\/web\/app_dev.php\/","gadgetId":2,"pageId":1,"gadgetParam":{"title":"Trouver mon tacos","tag":null,"cache":10,"timeout":10},"appParam":[]})'><div class="animated fadeIn">
+    <div ng-bind-html="error"></div>
+    <div class="row-fluid">
+        <h4 class="title" ng-bind-html="title"></h4>
+    </div>
+    <div id="map_all"></div>
+</div></div>
+	</div>
+</div>
