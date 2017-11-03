@@ -644,7 +644,7 @@ app.controller('keosu-around-meController', function ($rootScope, $scope, $http,
     });
 
     $scope.init = function (params) {
-        console.log("init around me gadget");
+        console.log("init around me gadget c");
         $scope.isList = true;
         usSpinnerService.spin('spinner'); // While loading, there will be a spinner
         $scope.param = params;

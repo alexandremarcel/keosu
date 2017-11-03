@@ -38,7 +38,6 @@ var MapElement = function (options) {
         zoom: 8
     };
     this.map = new google.maps.Map(document.getElementById(this.options.name), mapOptions);
-
 };
 
 MapElement.prototype.bound = function () {
@@ -55,6 +54,15 @@ MapElement.prototype.addMarker = function (name, position) {
         position: new google.maps.LatLng(position[0], position[1]),
         map: this.map
     });
+	switch (name)
+	{
+		case "position0":
+			this.markers[name].addListener('click', function() {window.location.href = "#/Page/2";});
+			break;
+		case "position1":
+			this.markers[name].addListener('click', function() {window.location.href = "#/Page/3";});
+			break;
+	}	
 };
 
 MapElement.prototype.editMarker = function (name, position) {
